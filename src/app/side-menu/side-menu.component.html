@@ -7,11 +7,14 @@
     <mat-sidenav-container class="side-menu-container">
       <mat-sidenav #sidenav>
         <mat-nav-list>
-          <a mat-list-item routerLink=".">Calendar</a>
-          <a mat-list-item routerLink=".">Events</a>
-          <a mat-list-item routerLink=".">Settings</a>
+          <a mat-list-item [routerLink]="'/'">Calendar</a>
+          <a mat-list-item [routerLink]="'/'">Events</a>
+          <a mat-list-item [routerLink]="'/'">Settings</a>
         </mat-nav-list>
       </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
     </mat-sidenav-container>
   </div>
   
