@@ -11,12 +11,16 @@ import { MatListModule } from '@angular/material/list';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { CalendarLeftComponent } from './calendar/calendar-left/calendar-left.component';
+import { CalendarRightComponent } from './calendar/calendar-right/calendar-right.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideMenuComponent,
-    CalendarComponent
+    CalendarComponent,
+    CalendarLeftComponent,
+    CalendarRightComponent
   ],
   imports: [
     BrowserModule,
