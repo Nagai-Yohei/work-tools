@@ -1,3 +1,13 @@
 .calendar-body {
     display: flex;
+    margin: 10px;
+}
+
+.calendar-left-top {
+    display: flex;
+}
+
+.calendar-button {
+    height: 100%;
+    margin: 0px 2px;
 }

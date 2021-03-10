@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { CalendarComponent } from './calendar/calendar.component';
@@ -27,6 +28,7 @@ import { CalendarDaysEventsComponent } from './calendar/calendar-days-events/cal
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    MatButtonModule,
     NoopAnimationsModule
   ],
   providers: [],

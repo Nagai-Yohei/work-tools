@@ -1,8 +1,11 @@
 <div class="calendar-body">
     <div class="calendar-left">
-        <h1>{{year}}/{{month}}</h1>
-        <button (click)="onClickLastMonth()"> < </button>
-        <button (click)="onClickNextMonth()"> > </button>
+        <div class="calendar-left-top">
+            <button mat-button color="primary" class="calendar-button" (click)="onClickLastMonth()"> ＜ </button>
+            <h1>{{year}}/{{month}}</h1>
+            <button mat-button color="primary" class="calendar-button" (click)="onClickNextMonth()"> ＞ </button>
+            <button mat-button color="primary" class="calendar-button" (click)="onClickToday()"> Today </button>
+        </div>
         <app-calendar-days-events></app-calendar-days-events>
     </div>
     <div class="calendar-right">

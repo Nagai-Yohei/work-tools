@@ -13,10 +13,7 @@ export class CalendarComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnInit(): void {
-    let date = new Date();
-    this.year = date.getFullYear();
-    this.month = date.getMonth() + 1;
-    this.ngOnChanges();
+    this.onClickToday();
   }
 
   ngOnChanges(): void {
@@ -44,6 +41,13 @@ export class CalendarComponent implements OnInit, OnChanges {
 
   onClickNextMonth(): void {
     this.month++;
+    this.ngOnChanges();
+  }
+
+  onClickToday(): void {
+    let date = new Date();
+    this.year = date.getFullYear();
+    this.month = date.getMonth() + 1;
     this.ngOnChanges();
   }
 
