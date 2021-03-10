@@ -1,15 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.css']
 })
-export class CalendarComponent implements OnInit {
+
+export class CalendarComponent implements OnInit, OnChanges {
+  nextYear: number = 2000;
+  nextMonth: number = 2;
 
   constructor() { }
 
   ngOnInit(): void {
+    let date = new Date();
+    this.year = date.getFullYear();
+    this.month = date.getMonth() + 1;
+    this.ngOnChanges();
   }
 
+  ngOnChanges(): void {
+    if (this.month === 12) {
+      this.nextYear = this.year + 1;
+      this.nextMonth = 1;
+    } else {
+      this.nextYear = this.year;
+      this.nextMonth = this.month + 1;
+    }
+  }
+
+  @Input() year: number = 2000;
+  @Input() month: number = 1;
 }
