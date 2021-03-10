@@ -11,8 +11,6 @@ import { MatListModule } from '@angular/material/list';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { CalendarComponent } from './calendar/calendar.component';
-import { CalendarMonthYearComponent } from './calendar/calendar-month-year/calendar-month-year.component';
-import { CalendarButtonsComponent } from './calendar/calendar-buttons/calendar-buttons.component';
 import { CalendarDaysEventsComponent } from './calendar/calendar-days-events/calendar-days-events.component';
 
 @NgModule({
@@ -20,8 +18,6 @@ import { CalendarDaysEventsComponent } from './calendar/calendar-days-events/cal
     AppComponent,
     SideMenuComponent,
     CalendarComponent,
-    CalendarMonthYearComponent,
-    CalendarButtonsComponent,
     CalendarDaysEventsComponent
   ],
   imports: [
