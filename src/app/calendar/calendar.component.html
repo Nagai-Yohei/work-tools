@@ -1,6 +1,8 @@
 <div class="calendar-body">
     <div class="calendar-left">
         <h1>{{year}}/{{month}}</h1>
+        <button (click)="onClickLastMonth()"> < </button>
+        <button (click)="onClickNextMonth()"> > </button>
         <app-calendar-days-events></app-calendar-days-events>
     </div>
     <div class="calendar-right">

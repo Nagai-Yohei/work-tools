@@ -20,6 +20,14 @@ export class CalendarComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(): void {
+    if (this.month > 12) {
+      this.year++;
+      this.month = 1;
+    } else if (this.month < 1) {
+      this.year--;
+      this.month = 12;
+    }
+    
     if (this.month === 12) {
       this.nextYear = this.year + 1;
       this.nextMonth = 1;
@@ -27,6 +35,16 @@ export class CalendarComponent implements OnInit, OnChanges {
       this.nextYear = this.year;
       this.nextMonth = this.month + 1;
     }
+  }
+
+  onClickLastMonth(): void {
+    this.month--;
+    this.ngOnChanges();
+  }
+
+  onClickNextMonth(): void {
+    this.month++;
+    this.ngOnChanges();
   }
 
   @Input() year: number = 2000;
