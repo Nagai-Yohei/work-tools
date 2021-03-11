@@ -3,8 +3,9 @@
     margin: 10px;
 }
 
-.calendar-left, .calendar-right {
+.calendar-left {
     width: 50%;
+    margin: 10px;
 }
 
 .calendar-left-top {
@@ -13,10 +14,6 @@
 
 .calendar-year-month-left {
     display: table-cell;
-    font-size: 24px;
-}
-
-.calendar-year-month-right {
     font-size: 24px;
 }
 
