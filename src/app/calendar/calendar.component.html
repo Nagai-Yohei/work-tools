@@ -1,14 +1,14 @@
 <div class="calendar-body">
     <div class="calendar-left">
         <div class="calendar-left-top">
-            <div class="calendar-year-month-left">{{year}}/{{month}}</div>
+            <span><div class="calendar-year-month-left">{{year}}/{{month}}</div></span>
             <div class="calendar-button">
-                <button mat-button color="primary" (click)="onClickLastMonth()"> ＜ </button>
-                <button mat-button color="primary" (click)="onClickNextMonth()"> ＞ </button>
+                <button mat-button color="primary" (click)="onClickLastMonth()"> Previous </button>
+                <button mat-button color="primary" (click)="onClickNextMonth()"> Next </button>
                 <button mat-button color="primary" (click)="onClickToday()"> Today </button>
             </div>
         </div>
-        <app-fullcalendar-days></app-fullcalendar-days>
+        <app-calendar-days-events></app-calendar-days-events>
     </div>
     <div class="calendar-left">
         <div class="calendar-left-top">
