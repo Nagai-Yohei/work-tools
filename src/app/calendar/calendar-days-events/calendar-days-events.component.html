@@ -4,5 +4,8 @@
         [colspan]="tile.cols"
         [rowspan]="tile.rows"
         [style.background]="tile.color">
-    {{tile.text}}</mat-grid-tile>
+        <div class="calendar-days-events-text">
+            {{tile.text}}
+        </div>
+    </mat-grid-tile>
 </mat-grid-list>
