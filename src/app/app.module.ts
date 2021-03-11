@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { CalendarComponent } from './calendar/calendar.component';
@@ -29,6 +30,7 @@ import { CalendarDaysEventsComponent } from './calendar/calendar-days-events/cal
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
+    MatGridListModule,
     NoopAnimationsModule
   ],
   providers: [],

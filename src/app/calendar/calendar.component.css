@@ -3,11 +3,24 @@
     margin: 10px;
 }
 
+.calendar-left, .calendar-right {
+    width: 50%;
+}
+
 .calendar-left-top {
-    display: flex;
+    display: table;
+}
+
+.calendar-year-month-left {
+    display: table-cell;
+    font-size: 24px;
+}
+
+.calendar-year-month-right {
+    font-size: 24px;
 }
 
 .calendar-button {
+    display: table-cell;
     height: 100%;
-    margin: 0px 2px;
 }
