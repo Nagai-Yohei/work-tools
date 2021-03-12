@@ -14,13 +14,23 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { CalendarDaysEventsComponent } from './calendar/calendar-days-events/calendar-days-events.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { FullcalendarDaysComponent } from './calendar/fullcalendar-days/fullcalendar-days.component';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+
+FullCalendarModule.registerPlugins([
+  dayGridPlugin,
+  interactionPlugin
+]);
 
 @NgModule({
   declarations: [
     AppComponent,
     SideMenuComponent,
     CalendarComponent,
-    CalendarDaysEventsComponent
+    CalendarDaysEventsComponent,
+    FullcalendarDaysComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +41,7 @@ import { CalendarDaysEventsComponent } from './calendar/calendar-days-events/cal
     MatListModule,
     MatButtonModule,
     MatGridListModule,
+    FullCalendarModule,
     NoopAnimationsModule
   ],
   providers: [],
